@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="UTF-8">
+	<title>hCard Builder</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript" src="javascripts/jquery.min.js"></script>	
+  <script type="text/javascript" src="javascripts/app.js"></script>
+</head>
+<body>
+
+	<div class="wrap">
+
+	  <!-- Left Form Layout
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="five columns form-body">
+			<div class="container">
+				<div class="row"><h1>hCard Builder</h1></div>
+
+				<br>
+
+				<div class="row"><small>PERSONAL DETAILS</small><hr></div>
+				
+				<div class="row">
+					<div class="six columns">
+						<label for="">GIVEN NAME</label>
+						<input type="text">
+					</div>
+					<div class="six columns">
+						<label for="">SURNAME</label>
+						<input type="text">						
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six columns">
+						<label for="">EMAIL</label>
+						<input type="text">
+					</div>
+					<div class="six columns">
+						<label for="">PHONE</label>
+						<input type="text">						
+					</div>
+				</div>	
+				
+				<br>
+
+				<div class="row"><small>ADDRESS</small><hr></div>							
+				
+				<div class="row">
+					<div class="six columns">
+						<label for="">HOUSE NAME OR #</label>
+						<input type="text">
+					</div>
+					<div class="six columns">
+						<label for="">STREET</label>
+						<input type="text">						
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six columns">
+						<label for="">SUBURB</label>
+						<input type="text">
+					</div>
+					<div class="six columns">
+						<label for="">STATE</label>
+						<input type="text">						
+					</div>
+				</div>	
+
+				<div class="row">
+					<div class="six columns">
+						<label for="">POSTCODE</label>
+						<input type="text">
+					</div>
+					<div class="six columns">
+						<label for="">COUNTRY</label>
+						<input type="text">						
+					</div>
+				</div>										
+				
+				<div id="create-card" class="row">
+					<button>Create hCard</button>
+				</div>
+			</div>
+		</div>
+
+	  <!-- Right Card Layout
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
+		<div class="seven columns card-body">
+			<div class="container">
+				<div class="row"><h4>HCARD PREVIEW</h4></div>
+				
+				<div class="card">
+					<div class="row"><h3>John Fairfax</h3></div>
+						<div class="form-container">
+							<div class="row form-row">
+								<p><strong>EMAIL</strong> <span id="card-email">john.fairfax@fairfaxmedia.com.au</span></p>
+							</div>
+
+							<div class="row form-row">
+								<p><strong>PHONE</strong> <span id="card-phone">02 9282 2833</span></p>
+							</div>
+
+							<div class="row form-row">
+								<p><strong>ADDRESS</strong> <span id="card-address">1 Darling Island Road</span></p>
+							</div>		
+
+							<div class="row form-row">
+								<p><span id="card-address-suburb">Pyrmont</span>, <span id="card-address-state">NSW</span></p>
+							</div>			
+
+							<div class="row form-row">
+								<p><strong>POSTCODE</strong> <span id="card-postcode">2009</span> <strong>COUNTRY</strong> <span id="card-country">Australia</span></p>
+							</div>	
+						</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+</body>
+</html>
