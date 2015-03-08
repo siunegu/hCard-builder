@@ -54,12 +54,12 @@
 }
 
 /* Left Form Button */
-#create-card {
+.card-row {
 	margin-top: 2em;
 	text-align: center;
 }
 
-#create-card button  {
+#submit-card  {
 	height: 2.2em;
 	width: 10em;
 
@@ -79,6 +79,19 @@
 	border-left: 0;
 	border-right: 0;
 	border-bottom: 2px solid #2980b9;
+
+	-webkit-transition: background-color .3s ease-in;
+	-o-transition: background-color .3s ease-in;
+	transition: background-color .3s ease-in;
+}
+
+#submit-card:hover {
+	background-color: #089CFF;	
+}
+
+#submit-card:active {
+	background-color: #30D946;	
+	border-bottom: 2px solid #27A838;	
 }
 
 
@@ -136,47 +149,34 @@
 }
 
 /* Card Fields */
-#card-email {
+.card-output-fields {
 	font-family: "Merriweather", serif;
-	font-size: 1.4em;
+	font-size: 1.4em;	
+}
 
+#js-card-email {
 	position: relative;
 	left: 68px;	
 }
 
-#card-phone {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-phone {
 	position: relative;
 	left: 60px;		
 }
 
-#card-address {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-address {
 	position: relative;
 	left: 44px;	
 }
 
-#card-address-suburb {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-address-suburb {
 	padding-left: 5.6em;
 }
 
-#card-address-state {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-address-state {
 }
 
-#card-postcode {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-postcode {
 	position: relative;
 	left: 33px;		
 }
@@ -186,9 +186,6 @@ div:nth-child(5) > p > strong:nth-child(3) {
 	left: 10em;
 }
 
-#card-country {
-	font-family: "Merriweather", serif;
-	font-size: 1.4em;
-
+#js-card-country {
 	position: relative;
 	left: 180px;	}
