@@ -31,7 +31,7 @@
 
 	  <!-- Left Form Layout
 	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<div class="five columns form-body">
+		<div class="form-body">
 			<div class="container">
 				<div class="row"><h1>hCard Builder</h1></div>
 
@@ -42,22 +42,22 @@
 				<div class="row">
 					<div class="six columns">
 						<label for="">GIVEN NAME</label>
-						<input type="text" id="js-form-given-name">
+						<input type="text" name="js-form-given-name" placeholder="Your First Name">
 					</div>
 					<div class="six columns">
 						<label for="">SURNAME</label>
-						<input type="text" id="js-form-surname">						
+						<input type="text" name="js-form-surname" placeholder="Your Last Name">						
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="six columns">
-						<label for="">EMAIL</label>
-						<input type="text" id="js-form-email">
+						<label for="text">EMAIL</label>
+						<input type="text" name="js-form-email" placeholder="Your Email">
 					</div>
 					<div class="six columns">
 						<label for="">PHONE</label>
-						<input type="text" id="js-form-phone">						
+						<input type="text" name="js-form-phone" placeholder="Your Phone">						
 					</div>
 				</div>	
 				
@@ -68,33 +68,33 @@
 				<div class="row">
 					<div class="six columns">
 						<label for="">HOUSE NAME OR #</label>
-						<input type="text" id="js-form-house-number">
+						<input type="text" name="js-form-house-number" placeholder="Your House Number">
 					</div>
 					<div class="six columns">
 						<label for="">STREET</label>
-						<input type="text" id="js-form-street">						
+						<input type="text" name="js-form-street-number" placeholder="Street Number">						
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="six columns">
 						<label for="">SUBURB</label>
-						<input type="text" id="js-form-suburb">
+						<input type="text" name="js-form-suburb">
 					</div>
 					<div class="six columns">
 						<label for="">STATE</label>
-						<input type="text" id="js-form-state">						
+						<input type="text" name="js-form-state">						
 					</div>
 				</div>	
 
 				<div class="row">
 					<div class="six columns">
 						<label for="">POSTCODE</label>
-						<input type="text" id="js-form-postcode">
+						<input type="text" name="js-form-postcode">
 					</div>
 					<div class="six columns">
 						<label for="">COUNTRY</label>
-						<input type="text" id="js-form-country">						
+						<input type="text" name="js-form-country">						
 					</div>
 				</div>										
 				
@@ -106,33 +106,35 @@
 
 	  <!-- Right Card Layout
 	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
-		<div class="seven columns card-body">
+		<div class="columns card-body">
 			<div class="container">
-				<div class="row"><h4>HCARD PREVIEW</h4></div>
+				<div class="row preview-title"><h4>HCARD PREVIEW</h4></div>
 				
-				<div class="card">
-					<div class="row"><h3>John Fairfax</h3></div>
-						<div class="form-container">
-							<div class="row form-row">
-								<p><strong>EMAIL</strong> <span id="js-card-email" class="card-output-fields">john.fairfax@fairfaxmedia.com.au</span></p>
+				<div class="row">
+					<div class="card">
+						<div class="row"><h3 id="js-card-fullname">John Fairfax</h3></div>
+							<div class="form-container">
+								<div class="row form-row">
+									<p><strong>EMAIL</strong> <span class="card-output-fields"><span id="js-card-email-firstname">john.fairfax@fairfax.com</span></span></p>
+								</div>
+
+								<div class="row form-row">
+									<p><strong>PHONE</strong> <span id="js-card-phone" class="card-output-fields">02 9283 2833</span></p>
+								</div>
+
+								<div class="row form-row">
+									<p><strong>ADDRESS</strong> <span id="js-card-address" class="card-output-fields">1 Darling Island Road</span></p>
+								</div>		
+
+								<div class="row form-row">
+									<p><span id="js-card-address-suburb" class="card-output-fields">Pyrmont, </span><span id="js-card-address-state" class="card-output-fields">NSW</span></p>
+								</div>			
+
+								<div class="row form-row">
+									<p><strong>POSTCODE</strong> <span id="js-card-postcode" class="card-output-fields">2009</span> <strong>COUNTRY</strong> <span id="js-card-country" class="card-output-fields">Australia</span></p>
+								</div>	
 							</div>
-
-							<div class="row form-row">
-								<p><strong>PHONE</strong> <span id="js-card-phone" class="card-output-fields">02 9282 2833</span></p>
-							</div>
-
-							<div class="row form-row">
-								<p><strong>ADDRESS</strong> <span id="js-card-address" class="card-output-fields">1 Darling Island Road</span></p>
-							</div>		
-
-							<div class="row form-row">
-								<p><span id="js-card-address-suburb" class="card-output-fields">Pyrmont</span>, <span id="js-card-address-state" class="card-output-fields">NSW</span></p>
-							</div>			
-
-							<div class="row form-row">
-								<p><strong>POSTCODE</strong> <span id="js-card-postcode" class="card-output-fields">2009</span> <strong>COUNTRY</strong> <span id="js-card-country" class="card-output-fields">Australia</span></p>
-							</div>	
-						</div>
+					</div>
 				</div>
 			</div>
 		</div>
